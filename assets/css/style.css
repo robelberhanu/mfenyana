@@ -139,10 +139,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+
+
 }
 
 #header .logo a {
   color: #fff;
+  float:left ;
+  display: flex;
 }
 
 #header .logo img {
