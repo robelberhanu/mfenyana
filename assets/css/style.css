@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   position: relative;
   height: 70px;
+  padding-left: 0;
 }
 
 @media (max-width: 992px) {
@@ -139,8 +140,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-
-
 }
 
 #header .logo a {
@@ -148,10 +147,20 @@ h1, h2, h3, h4, h5, h6 {
   float:left ;
   display: flex;
 }
-
-#header .logo img {
-  max-height: 100px;
+#header .logo-div {
+  background: #fff;
+  height: 70px;
 }
+#header .logo img {
+  height: 50px;
+  /*background: #fff;*/
+
+}
+
+#header .img-logo {
+  max-width: 250px;
+}
+
 
 .scrolled-offset {
   margin-top: 70px;
