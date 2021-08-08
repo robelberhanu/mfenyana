@@ -14,3 +14,12 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
+
+// function formToJson() {
+//     var object = {};
+//     formData.forEach(function(value, key){
+//         object[key] = value;
+//     });
+//     var json = JSON.stringify(object);
+//
+// }
