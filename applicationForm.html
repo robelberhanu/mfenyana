@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link rel="stylesheet" href="./assets/css/applicationForm.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <div class="container">
+
+<header class="align-content-center" style="background-color: rgba(23,1,9,0.7); height: 8%; position: absolute; top: 0; width: 100%; padding-top: 3px">
+    <div class="logo-div d-flex align-items-center">
+      <a href="index.html" class="logo me-auto me-lg-0">
+        <img src="assets/logo.png" alt="" class="img-fluid">
+      </a>
+  </div>
+</header><!-- End Header -->
+
+
+<div style="">
+  <div style="height:100%;" class="container">
+
     <div class="title">Apply At Mfenyana Attorneys</div>
     <div class="content">
       <form action="#">
@@ -30,12 +43,28 @@
             <input type="text" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <span class="details">Country of Birth</span>
+            <input type="text" placeholder="Enter your country of birth" required>
           </div>
           <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <span class="details">Date of Birth</span>
+            <input type="date" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">CV/Resume</span>
+            <input type="file" accept=".pdf, .png, .jpg, .jpeg, .docx" placeholder="Upload your CV (pdf or docx)" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ID/Passport</span>
+            <input type="file" accept=".pdf .png,.jpg,.jpeg" placeholder="Please upload a copy of your ID/Passport" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Grade 12 Results</span>
+            <input type="file" accept=".pdf, png,.jpg,.jpeg" placeholder="Upload document" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Latest University Transcript</span>
+            <input type="file" accept=".pdf,.png,.jpg,.jpeg" placeholder="Upload document" required>
           </div>
         </div>
         <div class="gender-details">
@@ -45,16 +74,16 @@
           <span class="gender-title">Gender</span>
           <div class="category">
             <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
             </label>
           </div>
         </div>
@@ -65,5 +94,6 @@
     </div>
   </div>
 
+</div>
 </body>
 </html>
