@@ -33,11 +33,18 @@
     <div class="form-style-2">
       <div class="form-style-2-heading">Provide blog connect to display on Connect page</div>
       <form class="blog-form" action="" method="post">
-        <label><span>Title <span class="required">*</span></span><input type="text" class="input-field" name="field1" value=""  placeholder="Blog title" required/></label>
-        <label><span>Date <span class="required">*</span></span><input type="date" class="bi-calendar-date" name="field2" value="" required/></label>
-        <label><span>Thumbnail <span class="required">*</span></span><input type="file" accept=".png,.jpg, .jpeg" class="bi-file" name="field3" value="" required/></label>
-        <label><span>Body <span class="required">*</span></span><textarea name="field4" placeholder="Type or paste blog content here...." class="textarea-field" required></textarea></label>
-
+        <label><span>Title <span class="required">*</span></span>
+          <input type="text" class="input-field" name="field1" value=""  placeholder="Blog title" required/>
+        </label>
+        <label><span>Date <span class="required">*</span></span>
+          <input type="date" class="bi-calendar-date" name="field2" value="" required/>
+        </label>
+        <label><span>Thumbnail <span class="required">*</span></span>
+          <input type="file" accept=".png,.jpg, .jpeg" class="bi-file" name="field3" value="" required/>
+        </label>
+        <label><span>Body <span class="required">*</span></span>
+          <textarea name="field4" placeholder="Type or paste blog content here...." class="textarea-field" required></textarea>
+        </label>
         <label><span> </span><input type="submit" value="Submit" /></label>
       </form>
     </div>
@@ -63,7 +70,14 @@
     <p>Tokyo is the capital of Japan.</p>
     <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
   </div>
+<!--
+var object = {};
+formData.forEach((value, key) => object[key] = value);
+var json = JSON.stringify(object);
 
+var new_json = JSON.stringify(obj.push({b: 2}));
+'[{"a": 1}, {"b": 1}]'
+-->
 </div>
 
 </body>
