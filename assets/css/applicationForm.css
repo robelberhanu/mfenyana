@@ -7,10 +7,10 @@
 }
 body{
   height: 100%;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  /*padding: 10px;*/
   background: linear-gradient(135deg, #ad0f1f, #020000);
 }
 .container{
