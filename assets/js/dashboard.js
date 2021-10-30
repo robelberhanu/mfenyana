@@ -12,20 +12,24 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " w3-red";
 }
 
-function getBase64(file) {
-    var reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = function () {
-        console.log(reader.result);
+function toDataURL(url, callback) {
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.onload = function() {
+        var fileReader = new FileReader();
+        fileReader.onloadend = function() {
+            callback(fileReader.result);
+        }
+        fileReader.readAsDataURL(httpRequest.response);
     };
-    reader.onerror = function (error) {
-        console.log('Error: ', error);
-    };
+    httpRequest.open('GET', url);
+    httpRequest.responseType = 'blob';
+    httpRequest.send();
 }
 
-var file = document.querySelector('#blogPic'.files[0]);
-getBase64(file); // prints the base64 string
-
+toDataURL(document.getElementById('blogPic').value, function(dataUrl) {
+    // document.write('Result in string:', dataUrl)
+    localStorage.setItem("base64Img", dataUrl);
+})
 function onSubmit(){
 
     // Get the data from each element on the form.
@@ -38,6 +42,8 @@ function onSubmit(){
     localStorage.setItem("title", name);
     localStorage.setItem("date", date);
     localStorage.setItem("text", msg);
+
+    alert("You have successfully added to your blog")
 
 
     }
