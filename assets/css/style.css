@@ -607,13 +607,19 @@ section {
 }
 
 @media (max-width: 992px) {
-  #container {
-    
+  #aboutimage {
+    width: 180px; 
+    height: 180px;
   }
 }
 @media (max-width: 92px) {
-  /* #aboutimage {
-    } */
+  #aboutfounder{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    right: 150px;
+    align-items: center;
+  }
 }
 
 
@@ -850,6 +856,12 @@ section {
   border: 10px solid #e0b7b7;
   padding-left: 2em;
   padding-right: 2em;
+}
+@media (max-width: 968px) {
+  .clients img {
+    max-width: 90%;
+    align-items: center;
+  }
 }
 
 .services .icon-box {
@@ -1608,6 +1620,24 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
   background: #ff9377;
 }
+
+@media (max-width: 968px) {
+  .info{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:100%;
+    width:100%;  
+  }
+}
+/* .info iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
