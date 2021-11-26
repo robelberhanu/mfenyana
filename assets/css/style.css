@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ff7f5d;
+  border: 6px solid  #641212;
   border-top-color: white;
   border-radius: 50%;
   width: 60px;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #ff9f86;
+  background:  #641212;
   color: #fff;
 }
 
@@ -454,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 88%;
   border: 10px solid #e0b7b7;
 }
 
@@ -589,9 +589,9 @@ section {
 #about{
 
   width: 100%;
-  height: 60vh;
+  height: 100%;
   position: relative;
-  /*margin: 5em auto 4em;*/
+  margin: 5em auto 4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -608,27 +608,18 @@ section {
 
 @media (max-width: 992px) {
   #aboutimage {
-    width: 180px; 
-    height: 180px;
+    max-width: 100%; 
+    max-height: auto;
   }
 }
-@media (max-width: 92px) {
-  #aboutfounder{
-    width: 70px;
-    height: 70px;
-    position: relative;
-    right: 150px;
-    align-items: center;
-  }
-}
+
 
 
 #aboutfounder{
 
   width: 100%;
-  height: 80vh;
+  height: 100%;
   position: relative;
-  /*margin: 5em auto 4em;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -636,10 +627,19 @@ section {
   padding-left: 4em;
 }
 
+
+
 #founderimage img{
   margin: 2em;
-  height: 80%;
+  height: 78%;
 }
+
+@media (max-width: 992px) {
+  #founderimage {
+    margin:3em auto 2em;
+  }
+}
+
 
 
 
@@ -783,10 +783,11 @@ section {
 #clients{
 
   margin-left: 6em;
-  width: 83%;
-  height: 70vh;
+  width: 89%;
+  height: 100%;
   position: relative;
-  /*margin: 5em auto 4em;*/
+  float: center;
+  margin:1em auto 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -832,7 +833,7 @@ section {
 #serivces{
 
   width: 100%;
-  height: 60vh;
+  height: 100%;
   position: relative;
   /*margin: 5em auto 4em;*/
   display: flex;
@@ -847,7 +848,7 @@ section {
 #serivces2{
 
   width: 100%;
-  height: 80vh;
+  height: 100%;
   position: relative;
   /*margin: 5em auto 4em;*/
   display: flex;
@@ -903,7 +904,7 @@ section {
 }
 
 .services .icon-box:hover .title a {
-  color: #ff7f5d;
+  color: #641212;
 }
 
 .services .description {
@@ -1470,8 +1471,8 @@ section {
 
   margin-left: 6em;
   width: 100%;
-  height: 70vh;
-  position: absolute;
+  height: 100%;
+  position: relative;
   /*margin: 5em auto 4em;*/
   display: flex;
   align-items: center;
@@ -1485,11 +1486,11 @@ section {
 
   margin-left: 6em;
   width: 100%;
-  height: 70vh;
+  height: 100;
   position: absolute;
-  /*margin: 5em auto 4em;*/
+  margin: 5em auto 4em;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   border: 10px solid #e0b7b7;
   padding-left: 2em;
@@ -1621,15 +1622,13 @@ section {
   background: #ff9377;
 }
 
-@media (max-width: 968px) {
+/* @media (max-width: 968px) {
   .info{
     overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:100%;
-    width:100%;  
   }
-}
+} */
+
+
 /* .info iframe{
   left:0;
   top:0;
@@ -1638,6 +1637,7 @@ section {
   position:absolute;
 
 } */
+
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1766,7 +1766,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ff7f5d;
+  background: #641212;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1774,7 +1774,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #ff9377;
+  background: #641212;
 }
 
 #footer .footer-top .social-links {
@@ -1797,7 +1797,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ff7f5d;
+  background: #641212;
   color: #fff;
   text-decoration: none;
 }
