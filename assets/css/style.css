@@ -1622,11 +1622,11 @@ section {
   background: #ff9377;
 }
 
-/* @media (max-width: 968px) {
-  .info{
-    overflow:hidden;
+@media (max-width: 320px) {
+  .contact{
+    margin-left: 10px;
   }
-} */
+}
 
 
 /* .info iframe{
