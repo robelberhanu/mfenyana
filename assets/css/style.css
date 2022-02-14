@@ -1639,6 +1639,11 @@ section {
   }
 }
 
+@media (max-width:320) {
+  #info{
+  margin-left: 1em;
+  }
+}
 
 /* .info iframe{
   left:0;
